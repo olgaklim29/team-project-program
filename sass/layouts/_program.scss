@@ -17,7 +17,11 @@
     flex-wrap: nowrap;
     --grid-num: 2;
   }
-  
+  @media screen and (min-width: 1280px) {
+
+    flex-wrap: nowrap;
+    --grid-num: 2;
+  }
   }
 
 
@@ -212,6 +216,8 @@ margin-left: 60px;
     
   
  }
+
+
 
  img.rot:hover, img.rot:focus {
   animation: 1s linear 0s normal none infinite running rot;
