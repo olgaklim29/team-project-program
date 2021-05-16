@@ -141,12 +141,15 @@ img {
 }
 
 .program__item {
-  display: flexbox;
+  display: border-box;
   --grid-num: 1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .program__item {
+    width: 392px;
+    height: 330px;
+    left: 73px;
     --grid-num: 2;
   }
 }
