@@ -3,8 +3,22 @@
  
 
 .program__container{
+  display: flex;
+
+  min-width: 290px;
+  height: 886.61px;
+  left: 15px;
+  right: 15px;
   background-color: #FFFFF9;
-}
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    
+    flex-wrap: nowrap;
+    --grid-num: 2;
+  }
+  
+  }
 
 
 
@@ -32,7 +46,8 @@
 
 
 .program__text {
-
+  
+display: block;
 width: 290px;
 
 left: 15px;
@@ -45,7 +60,17 @@ line-height: 20px;
 
 color: #2E2520;
 
-
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+   
+  margin-top: 0px;
+  float: left;
+ 
+  --grid-num: 2;
+}
+@media screen and (min-width: 1280px) {
+  margin-top: 0px;
+  --grid-num: 2;
+}
 }
 
 .program__text--list--item{
@@ -55,13 +80,15 @@ color: #2E2520;
 
 .program__item {
 
-    display: border-box;
+  min-width: 290px;
+ 
+  left: 15px;
+  right: 15px;
+    display: block;
     --grid-num: 1;
 
     @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-      width: 392px;
-      height: 330px;
-      left: 73px;
+      
       --grid-num: 2;
     }
     @media screen and (min-width: 1280px) {
@@ -73,9 +100,22 @@ color: #2E2520;
     
 
 .program__box {
-  margin-top: -30px;
   
-}
+  display: block;
+  
+  margin-top: -30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+   
+    margin-top: 0px;
+   float: right;
+    --grid-num: 2;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+    --grid-num: 2;
+  }
+  }
 
 .program__card {
 display: flex;
@@ -88,6 +128,9 @@ flex-wrap: wrap;
 --grid-num: 2;
 
 }
+
+
+
 .program__card--item:nth-child(2n){
     margin-top: 40px;
     margin-left: 5px;
@@ -158,12 +201,10 @@ margin-left: 60px;
 
 .grid {
     display: flex;
-    flex-wrap: wrap;
+    
     margin-left: -30px;
-    
-    
- 
- } 
+
+}
     
 .grid__item {
     flex-basis: calc((100% - 30px * var(--grid-num)) / var(--grid-num));
