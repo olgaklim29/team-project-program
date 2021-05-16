@@ -1,0 +1,30 @@
+.deckstop-section {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.types-services {
+  &__thumb {
+    position: relative;
+    
+  }
+  
+  &__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    background-color: var(--bg-headline-color);
+    color: var(--headline-color-text);
+  }
+}

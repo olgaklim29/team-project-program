@@ -1,0 +1,68 @@
+.menu {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+  @media screen and (min-width: 767.98px) {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+   
+.menu__link {
+    position: relative;
+    display: block;
+    letter-spacing: 0.02em;
+  
+    color: var(--link-text-menu);
+    transition: color var(--animation);
+
+  @media screen and (min-width: 767.98px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+  
+    
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    bottom: -1px;
+    background-color: var(--transparent-color);
+  
+    transition: background-color var(--animation);
+  }
+  
+  &:hover::after,
+  &:focus::after {
+    background-color: var(--accent-text-color);
+  }
+} 
+  
+.menu__link--current {
+    color: var(--accent-text-color);
+  
+    transition: color var(--animation);
+  
+  
+  &::after {
+    background-color: var(--accent-text-color);
+  }
+  &:hover,
+  &:focus,
+  &:hover::after,
+  &:focus::after {
+    color: var(--background-color);
+  }
+}

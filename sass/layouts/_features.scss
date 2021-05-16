@@ -1,0 +1,40 @@
+.features {
+      
+  &__item {
+    
+      --grid-num: 1;
+  
+      @media screen and (min-width: 768px) {
+        --grid-num: 2;
+      }
+      @media screen and (min-width: 1200px) {
+        --grid-num: 4;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--features-tumb-color);
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+  font-weight: 400;
+  color: var(--primery-text-color);
+  }
+
+  &__card &__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-bottom: 30px;
+  }
+}

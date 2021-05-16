@@ -1,0 +1,62 @@
+ /*Logo*/
+  
+    
+ .logo {
+    
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 26px;
+    }
+
+
+    &:hover,
+    &:focus {
+    color: var(--accent-text-color);
+    transition: fill var(--animation)
+  }
+
+   &--accent-color {
+    color: var(--accent-text-color);
+  }
+
+  
+  
+  
+  &__footer {
+    color: var(--white-color);
+  
+    display: block;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  
+    padding-top: 0;
+    padding-bottom: 15px;
+      
+
+    transition: color var(--animation);
+
+    @media screen and (max-width: 1199.98px) {
+      margin: 0 auto 20px auto;
+    }
+  }
+   
+  
+
+  &__footer:hover,
+  &__footer:focus {
+    color: var(--accent-text-color);
+    transition: fill var(--animation)
+  }
+    
+}
