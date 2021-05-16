@@ -12,24 +12,20 @@ body {
     font-family: var(--title-font);
     font-weight: 500;
     letter-spacing: 0.03em;
-    color: var(--primery-text-color);
-    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    
 
     margin: 0;
   }
 
-  body.modal-open {
-    overflow: hidden;
-  }
   
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6,
-  p {
-    margin-top: 0;
+  h6 {
+    
     margin-bottom: 0;
 }
 
@@ -39,10 +35,7 @@ img {
     height: auto;
 }
 
-address {
-    font-style: normal;
-    min-width: 231px;
-  }
+
 
 .list {
     list-style: none;
@@ -54,6 +47,5 @@ address {
     letter-spacing: 0.03em;  
     text-decoration: none;
     
-    color: var(--link-text-contacts);
-    transition: color var(--animation);
+   
 }
